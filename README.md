@@ -11,8 +11,7 @@ This project was created as a hands-on exercise to practice:
 
 ##  Live Demo
 
- https://your-username.github.io/weather-app/](https://norhangamaly.github.io/Weather/
-
+https://norhangamaly.github.io/Weather/
 
 ##  Features
 
