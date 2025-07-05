@@ -1,0 +1,222 @@
+body{
+    background-image: url(../images/background.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header, .footer{
+    background-color: rgba(128, 128, 128, 0.642);
+}
+.title{
+    width: 30%;
+}
+.title img{
+    width: 40%;
+}
+.links{
+    width: 40%;
+}
+ul {
+list-style: none;
+display: flex;
+align-content: center;
+justify-content: flex-start;
+}
+.links ul li{
+    margin:0 5px;
+    padding: 0 15px;
+    align-self: center;
+        transition: all 0.5s;
+
+}
+.active{
+    border: 2px solid  rgb(0, 178, 194);
+    border-radius: 25px;
+}
+.active a{
+    color:  rgb(0, 178, 194);}
+    
+.links ul li a{
+    transition: all 0.5s;
+
+}
+.links ul li:hover a{
+    color:  rgb(0, 178, 194);} 
+
+.links ul li:hover{
+    border: 2px solid  rgb(0, 178, 194);
+    border-radius: 25px;
+}
+#search, .subscribe-form{
+    background-color: rgb(55, 54, 54);
+    border-radius: 1.6rem;
+    padding: 5px 5px;
+    margin: auto;
+}
+#search input{
+    background: rgb(55, 54, 54) !important;
+    border: none;
+    width: 88%;
+}
+#search input:focus{
+      outline: none;        
+
+}
+#search button{
+    background-color: rgb(0, 178, 194);
+    border-radius: .8rem;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 40px;
+    color: white;
+
+}
+.weather-details{
+        margin: auto;
+
+}
+
+.weather-details .weather{
+    height: 400px;
+    background-color: gray;
+}
+.weather-details .day-1 .day-name, .day-3 .day-name{
+    background-color: rgba(51, 49, 49, 0.485);
+                padding: .3125rem;
+
+}
+.weather-details .day-2 .day-name{
+        background-color: rgba(5, 5, 5, 0.485);
+        padding: .3125rem;
+
+}
+.weather-details .day-1 .weather, .day-3 .weather{
+    background-color: #2d303d8d;
+            padding: .3125rem;
+
+}
+
+.weather-details .day-2 .weather{
+        background-color: #22253088;
+            padding: .3125rem;
+
+}
+.day-1 li i{
+font-size: 1rem;
+}
+
+#temp{
+    font-size: 5rem;
+    font-weight: 900;
+}
+#condition-icon img{
+height: 100px ;
+}
+.condition-icon img{
+height: 80px ;
+margin-top: 40px;
+}
+#condition-text, .condition-text {
+    color: rgb(0, 178, 194);
+}
+.condition-text {
+margin-top: 20px;
+}
+.max{
+    font-size: 2rem;
+}
+.subscribe-form input{
+    background: inherit;
+    border: none;
+    width: 84%;
+}
+.subscribe-form button{
+    background-color: rgb(0, 178, 194);
+    border-radius: .8rem;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+.social li i{
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: rgba(30, 29, 29, 0.453);
+    color: rgb(0, 178, 194);
+    transition: all 0.5s;
+}
+
+.social li{
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.social li:hover i{
+    background-color: rgb(0, 178, 194);
+    color: white;
+}
+
+.move{
+       background-color: rgb(55, 54, 54);
+    border-radius: 1.6rem;
+    padding: 5px 5px;
+    margin: auto;
+    color: rgb(182, 181, 181);
+}
+.move i {
+    margin: 0 5px;
+}
+
+.left-side{
+    background-color: #575c626d;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+}
+.left-side img{
+width: 70%;
+height: 300px;
+border-radius: 30px;
+}
+.right-side{
+    background-color: #575c626d;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+
+}
+.right-side input, textarea{
+    background-color: rgb(55, 54, 54);
+    border-radius: 1.6rem;
+    padding: 5px 5px;
+    margin: auto;
+    border: none;
+    width: 45%;
+}
+.right-side button{
+     background-color: rgb(0, 178, 194);
+    border-radius: .8rem;
+    border: none;
+    width: 15%;
+    border-radius: 25px;
+    padding: 10px 15px;
+    color: white;
+    align-self: end;
+}
+.right-side input:focus,textarea:focus{
+     border: 2px solid #00bcd4; 
+  outline: none;        
+  box-shadow: 0 0 1px #00bcd4;
+}
