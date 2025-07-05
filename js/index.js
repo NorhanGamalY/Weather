@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
 let searchInput
 document.getElementById('search-input').addEventListener('input', function(){
 searchInput = document.getElementById('search-input').value;
-console.log(searchInput)
 cityWeather(searchInput)
 });
 
