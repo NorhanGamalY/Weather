@@ -1,15 +1,13 @@
 window.addEventListener('DOMContentLoaded', () => {
+  cityWeather('Cairo');         
+
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      pos => {
-        const coords = `${pos.coords.latitude},${pos.coords.longitude}`;
-        cityWeather(coords);
-      },
-      err => console.warn('Geolocation denied:', err.message)
-    );
+    navigator.geolocation.getCurrentPosition(pos => {
+      const coords = `${pos.coords.latitude},${pos.coords.longitude}`;
+      cityWeather(coords);     
+    });
   }
 });
-
 
 
 let searchInput
@@ -26,18 +24,10 @@ async function cityWeather(city) {
   let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b668bba74d804de3a8d10011250507&q=${city}&days=3`)
 if(response.ok){
     let data = await response.json();
-    // console.log(data.forecast.forecastday[1].day.condition.icon);
     displayWeather(data)
-    // dayTransition(data.forecast.forecastday[1].date)
-
 }
 }
-// let x
-// function dayTransition(dateString){
-//   let date = new Date(dateString);
-//    x = date.toLocaleDateString('en-US', { weekday: 'long' })
 
-// }
 
 
 function displayWeather(result){
